@@ -9,6 +9,7 @@ agent any
   {
   echo 'Hi, This is my first declarative pipeline'
   }
+  }
   stage('Two')
   {
   steps
@@ -21,7 +22,8 @@ agent any
   when{
   not{
   branch "main"
-  }}
+  }
+  }
   steps
   {
   echo "hello"
