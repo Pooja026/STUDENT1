@@ -1,35 +1,35 @@
 pipeline
 {
 agent any
-Stages
+stages
 {
-Stage('Build')
+stage('Build')
 {
-Steps
+steps
 {
 echo "Building a project"
 bat "mvn clean"
 }
 }
-Stage('Test')
+stage('Test')
 {
-Steps
+steps
 {
 echo "Testing a project"
 bat "mvn test"
 }
 }
-Stage('Compile')
+stage('Compile')
 {
-Steps
+steps
 {
 echo "compiling a project"
 bat "mvn compile"
 }
 }
-Stage('Deploy')
+stage('Deploy')
 {
-Steps
+steps
 {
 echo "Deploying a project"
 }
